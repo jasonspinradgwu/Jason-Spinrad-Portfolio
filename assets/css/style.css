@@ -381,7 +381,7 @@ main {
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
-  border-radius: 15px 15px;
+  border-radius: 0 px 15px;
 }
 
 .sidebar.active { max-height: 405px; }
@@ -396,7 +396,7 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 0 20px 20px 20px;
 }
 
 .info-content .name {
@@ -421,13 +421,13 @@ main {
   position: absolute;
   top: -15px;
   right: -15px;
-  border-radius: 0 15px;
+  border-radius: 15px 0 15px 15px;
   font-size: 13px;
   color: #F2F3F3; /* Default text color: Off-white */
   background: #172A55; /* Default background: Navy blue */
   padding: 10px;
   box-shadow: var(--shadow-2);
-  transition: background var(--transition-1), color var(--transition-1);
+  transition: var(--transition-1), color var(--transition-1);
   z-index: 1;
 }
 
@@ -436,7 +436,7 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: #172A55; /* Navy blue background */
+  background: #FFF; /* Navy blue background */
   transition: var(--transition-1);
   z-index: -1;
 }
@@ -527,6 +527,7 @@ main {
 
 
 .social-item .social-link:hover { color: var(--light-gray); }
+
 
 
 
