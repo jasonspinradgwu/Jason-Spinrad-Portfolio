@@ -419,15 +419,15 @@ main {
 
 .info_more-btn {
   position: absolute;
-  top: -15px;
-  right: -15px;
-  border-radius: 15px 0 15px 15px;
+  top: -10px;
+  right: -10px;
+  border-radius: 0 0 0 15px;
   font-size: 13px;
-  color: #F2F3F3; /* Default text color: Off-white */
-  background: #172A55; /* Default background: Navy blue */
+  color:  #172A55;
+  background: #FFFFFF;
   padding: 10px;
   box-shadow: var(--shadow-2);
-  transition: var(--transition-1), color var(--transition-1);
+  transition: var(--transition-1);
   z-index: 1;
 }
 
@@ -436,36 +436,25 @@ main {
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  background: #FFF; /* Navy blue background */
+  background: #FFFFFF;
   transition: var(--transition-1);
   z-index: -1;
 }
 
-/* Hover State */
 .info_more-btn:hover,
-.info_more-btn:focus {
-  color: #172A55; /* Text changes to navy blue */
-  background: #F2F3F3; /* Background changes to white */
-}
+.info_more-btn:focus { background: #07082b; }
 
 .info_more-btn:hover::before,
-.info_more-btn:focus::before {
-  background: #F2F3F3; /* Ensure pseudo-element matches background */
+.info_more-btn:focus::before { background: #FFFFFF; }
+
+.info_more-btn span { display: none; }
+
+.sidebar-info_more {
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-2);
 }
 
-/* Active State */
-.info_more-btn:active {
-  color: #172A55; /* Text remains navy blue */
-  background: #F2F3F3; /* Background stays white */
-}
-
-.info_more-btn:active::before {
-  background: #F2F3F3; /* Ensure pseudo-element matches active background */
-}
-
-.info_more-btn span {
-  display: none;
-}
 
 .sidebar-info_more {
   opacity: 0;
